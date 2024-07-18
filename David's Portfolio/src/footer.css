@@ -28,7 +28,8 @@ ul {
 }
 
 .links {
-  gap: 10px;
+  display: flex;
+  gap: 20px;
 }
 
 .links a {
@@ -69,13 +70,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   gap: 30px;
   padding-bottom: 40px;
   padding-left: 60px;
   width: 100%;
 }
 
-@media (width > 420px) {
+/* @media (width > 420px) {
   section {
     align-items: center;
     padding-left: 0;
@@ -85,7 +87,7 @@ section {
   .links {
     gap: 20px;
   }
-}
+} */
 
 #page-container {
   position: relative;

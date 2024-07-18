@@ -1,18 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import './footer.css'
 import Header from './components/header'
 import Footer from './components/footer'
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <div className='page-container'>
-      <div className='content-wrap'>
+    <div id='page-container'>
+      <div id='content-wrap'>
     <Header />
+    <Outlet />
       </div>
     <Footer />
     </div>
