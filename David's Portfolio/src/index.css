@@ -1,0 +1,147 @@
+:root {
+    --clr-dark: #212832;
+    --clr-light: #f5f3ee;
+    --clr-accent1: #00ADB4;
+    --clr-accent2: #00FFF5;
+    --clr-medium: #3A3D46;
+  
+    --font-primary: 'Arial', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+  
+    --padding-main: 16px;
+  }
+  
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    color: var(--clr-accent1);
+  }
+  
+  a {
+    color: var(--clr-accent2);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-main);
+  }
+  
+  #btn {
+    background-color: var(--clr-accent2);
+    color: var(--clr-dark);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  #page-container {
+      position: relative;
+      min-height: 100vh;
+    }
+    
+    #content-wrap {
+      padding-bottom: 370px; /* Footer height */
+    }
+    
+    .navbar {
+        background-color: var(--clr-accent1);
+        color: var(--clr-light);
+        margin-bottom: 2vh;
+    }
+
+
+.footerbackground {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.legal {
+  font-size: 12px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(3) scaleX(2.25);
+  transform-origin: bottom;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 370px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  width: 100%;
+}
+
+/* @media (width > 420px) {
+  section {
+    align-items: center;
+    padding-left: 0;
+    gap: 20px;
+  }
+
+  .links {
+    gap: 20px;
+  }
+} */

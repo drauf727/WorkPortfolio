@@ -1,9 +1,7 @@
-import '../footer.css'
-
 function Footer() {
     return(
         <footer id="footer">
-        <div className="background">
+        <div className="footerbackground">
             <svg
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +13,7 @@ function Footer() {
                 viewBox="0 0 1600 900"
             >
                 <defs>
-                    <path id="wave" fill="#d8f8e4" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                    <path id="wave" fill="#00ADB4" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
 s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"/>
                 </defs>
                 <g>
@@ -64,15 +62,17 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
         <section>
             <div className="row align-items-bottom">
                 <div className="col-auto my-4">
-                    <ul className="links mb-1">
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="developers.html">Developers</a>
-                        </li>
-                    </ul>
-                    <p className="legal">© 2024 All rights reserved</p>
+                    <div className="align-items-center">
+                    <a href="https://www.linkedin.com/in/david-rauf-ba4941180/" target="_blank">
+                    <i className="bi bi-linkedin" style={{ fontSize: '3rem', marginRight: '10px', color: '#f5f3ee'}}></i>
+                     </a>
+                    <a href="https://github.com/drauf727" target="_blank">
+                    <i className="bi bi-github" style={{ fontSize: '3rem', marginRight: '10px', color: '#f5f3ee'}}></i>
+                    </a>
+                    <a href="https://www.facebook.com/drauf727" target="_blank">
+                    <i className="bi bi-facebook" style={{ fontSize: '3rem', color: '#f5f3ee'}}></i>
+                    </a>
+                    </div>
                     </div>
             </div>
         </section>

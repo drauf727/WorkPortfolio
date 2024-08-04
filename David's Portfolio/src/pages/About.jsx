@@ -13,8 +13,8 @@ export default function About() {
         or have any questions please use the contact tab to reach out to me directly. There is also an attached resume that
         you can download in the links above.
       </div>
-    </div>
-      </>
+      </div>
+    </>
     );
   }
   

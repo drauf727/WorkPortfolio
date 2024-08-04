@@ -1,16 +1,37 @@
+import '../resume.css'
 export default function Resume() {
-    return (
-      <div>
-        <h1>About Page</h1>
-        <p>
-          Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-          Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-          mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-          lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-          imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-          in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-        </p>
+  return (
+    <div className="container mt-5">
+      <h1 className="text-center mb-4">Resume</h1>
+
+      <div className="row">
+        <div className="col-md-6 mb-4">
+          <div className="card borderless-card">
+            <div className="card-body">
+              <h3 className="card-title">Technical Skills</h3>
+                <li>React</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-6 mb-4">
+          <div className="card borderless-card">
+            <div className="card-body">
+              <h3 className="card-title">Soft Skills</h3>
+                <li>Years of management experience</li>
+                <li>Designed multiple successful small businesses</li>
+                <li>Work well within a team structure</li>
+                <li>Outside the box thinking</li>
+            </div>
+          </div>
+        </div>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

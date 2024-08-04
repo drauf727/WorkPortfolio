@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../contact.css'
 
 export default function Contact() {
   const blankForm = {
@@ -24,23 +25,55 @@ export default function Contact() {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-      <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'justify', gap: '20px' }}>
-        <label>
-          Name:
-          <input className='ms-2' type="text" name="name" value={formData.name} onChange={handleChange} required />
-        </label>
-        <label>
-          Email:
-          <input className='ms-2' type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </label>
-        <label>
-          Message:
-          <textarea className='ms-2' name="message" value={formData.message} onChange={handleChange} required />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <>
+      <div className="container mt-5">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <h1 className="text-center mb-4">Contact Me</h1>
+            <form onSubmit={handleSubmit}>
+              <div className="form-group mb-3">
+                <label htmlFor="name">Name:</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group mb-3">
+                <label htmlFor="email">Email:</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group mb-4">
+                <label htmlFor="message">Message:</label>
+                <textarea
+                  className="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="d-flex justify-content-center">
+              <button type="submit" className="btn btn-custom">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </>
   );
 }

@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import './App.css'
-import './footer.css'
 import Header from './components/header'
 import Footer from './components/footer'
 import { Outlet } from 'react-router-dom';
+import './index.css';
+
 
 function App() {
   return (
